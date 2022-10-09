@@ -16,11 +16,11 @@ jobs:
         python-version: [3.10]
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
-          cache: 'pip' # caching pip dependencies
+      - name: Get code
+        uses: actions/checkout@v3
+      
+      - name: Install python
+        uses: actions/setup-python@v4
       
       - name: Install dependecies
         run: |
