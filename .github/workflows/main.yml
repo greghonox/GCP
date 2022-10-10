@@ -22,11 +22,11 @@ jobs:
       - name: Install python
         uses: actions/setup-python@v4
       
-      - name: Install dependecies
+      - name: Install dependencies
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Unitaty Test
+      - name: Unitary Test
         run: |
           pytest tests/
